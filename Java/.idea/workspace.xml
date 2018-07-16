@@ -17,6 +17,9 @@
     <SUITE FILE_PATH="coverage/JavaPrograms$TotalWaysToFormN.ic" NAME="TotalWaysToFormN Coverage Results" MODIFIED="1531766779796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>DynamicProgramming.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/JavaPrograms$BytelandianGoldCoins.ic" NAME="BytelandianGoldCoins Coverage Results" MODIFIED="1531771508529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DynamicProgramming.*</FILTER>
+    </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -29,14 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TotalWaysToFormN.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TotalWaysToFormN.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/TotalWaysToFormN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <state relative-caret-position="132">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BytelandianGoldCoins.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/BytelandianGoldCoins.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="163" />
             </state>
           </provider>
         </entry>
@@ -58,6 +70,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/IsMultipleOf3.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/TotalWaysToFormN.java" />
+        <option value="$PROJECT_DIR$/src/DynamicProgramming/BytelandianGoldCoins.java" />
       </list>
     </option>
   </component>
@@ -118,7 +131,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TotalWaysToFormN">
+  <component name="RunManager" selected="Application.BytelandianGoldCoins">
+    <configuration name="BytelandianGoldCoins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DynamicProgramming.BytelandianGoldCoins" />
+      <module name="Java" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DynamicProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="IsMultipleOf3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IsMultipleOf3" />
       <module name="Java" />
@@ -179,9 +203,11 @@
     <list>
       <item itemvalue="Application.IsMultipleOf3" />
       <item itemvalue="Application.TotalWaysToFormN" />
+      <item itemvalue="Application.BytelandianGoldCoins" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BytelandianGoldCoins" />
         <item itemvalue="Application.TotalWaysToFormN" />
         <item itemvalue="Application.IsMultipleOf3" />
       </list>
@@ -206,13 +232,13 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49609375" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4934896" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5032552" side_tool="true" visible="true" weight="0.32965517" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49674478" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3294271" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -236,6 +262,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/IsMultipleOf3.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -253,11 +284,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/TotalWaysToFormN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="132">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/BytelandianGoldCoins.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="163" />
         </state>
       </provider>
     </entry>
