@@ -25,6 +25,7 @@ bool isBST(node* root)
         prev=root;
         root = root->right;
     }
+    return true;
 }
 
 /* Driver program to test above functions*/
