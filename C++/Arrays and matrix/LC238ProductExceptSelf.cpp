@@ -41,6 +41,20 @@ public:
         
         return output;
     }
+
+    vector<int> MoreEfficientProductExceptSelf(vector<int>& a) {
+        int n = a.size();
+        vector<int>res(n,1);
+        int fromLeft=1, fromRight=1;
+        for(int i=0;i<n;++i)
+        {
+            res[i]*=fromLeft;
+            fromLeft*=a[i];
+            res[n-1-i]*=fromRight;
+            fromRight*=a[n-1-i];
+        }
+        return res;
+    }
 };
 
 
