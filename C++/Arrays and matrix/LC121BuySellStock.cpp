@@ -48,3 +48,22 @@ public:
         return max_profit;
     }
 };
+
+// Kadane's algorithm
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();
+        
+        int max_profit_till_now=0;
+        int max_profit=0;
+        
+        for(int i=1;i<n;++i)
+        {
+            max_profit_till_now=max(0,max_profit_till_now+prices[i]-prices[i-1]);
+            max_profit = max(max_profit,max_profit_till_now);
+        }
+        return max_profit;
+    }
+};
