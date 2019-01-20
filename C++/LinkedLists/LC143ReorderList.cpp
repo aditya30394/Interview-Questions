@@ -34,7 +34,7 @@ public:
         
         ListNode *slow = head, *fast = head, *end=head;
         
-        while(fast && fast->next && fast->next)
+        while(fast && fast->next && fast->next->next)
         {
             slow=slow->next;
             fast=fast->next->next;
