@@ -36,3 +36,27 @@ public:
         reverse(nums.begin()+k, nums.end());
     }
 };
+
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        int n=nums.size();
+        k=k%n;
+        int count=0,start=0;
+        for(start=0;count<n;++start)
+        {
+            int current = start;
+            int prev = nums[current];
+            
+            do
+            {
+                int next = (current+k)%n;
+                int temp = nums[next];
+                nums[next]=prev;
+                prev=temp;
+                current=next;
+                ++count;
+            }while(start!=current);
+        }
+    }
+};
