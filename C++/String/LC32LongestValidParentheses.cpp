@@ -121,10 +121,11 @@ public:
                 }
                 else if(i-dp[i-1]-1>=0 && s[i-dp[i-1]-1]=='(')
                 {
-                    dp[i]= 2 + dp[i-1] + (i-dp[i-1]-2 >=0)? dp[i-dp[i-1]-2]:0;
+                    dp[i]= 2 + dp[i-1] + ((i-dp[i-1]-2 >=0)? dp[i-dp[i-1]-2]:0);
                 }
-                len=max(len,dp[i]);
+                
             }
+            len=max(len,dp[i]);
         }
         return len;
     }
