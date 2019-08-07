@@ -53,6 +53,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4
 
 */
 
+// coming from the end
 class Solution {
 public:
     int romanToInt(string s) {
@@ -70,5 +71,27 @@ public:
             }
         }
         return result;
+    }
+};
+
+// forward iteration - The trick is that the last letter is always added. Except the last one, 
+// 						if one letter is less than its latter one, this letter is subtracted.
+class Solution {
+public:
+    int romanToInt(string s) {
+        unordered_map<char, int> T = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50},
+                                     {'C', 100}, {'D', 500}, {'M', 1000},};
+        int result = 0;
+        
+        for(int i = 0; i<s.size()-1;++i){
+            if(T[s[i]]<T[s[i+1]]){
+                result = result - T[s[i]];
+            }
+            else
+            {
+                result = result + T[s[i]];
+            }
+        }
+        return result + T[s.back()];
     }
 };
